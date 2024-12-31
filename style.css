@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #20232D !important;
+    color: white !important;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(./font/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url(./font/Poppins-Bold.otf);
+}
+
+.poppins-bold{
+    font-family: poppins-bold;
+}
+
+.text-infos{
+    color: #15FFFD !important;
+}
+.bg-infos{
+    background-color:  #15FFFD !important;
+}
+.border-infos{
+    border-color:  #15FFFD !important;
+}
+
+
+.td-none{
+    text-decoration: none !important;
+}
+
+
+.fs-18{
+    font-size: 18px !important;
+}
+
+
+.text-ash{
+    color: #20232D !important;
+}
+
+.shadows{
+    box-shadow: 0 0 10px 1px  #15FFFD !important; 
+}
+.flex-1{
+    flex: 1 !important;
+}
+
+
+
+
+/* NAVBAR */
+
+.navbar-section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #20232D !important;
+    z-index: 1;
+}
+#navbar-btn{
+    color: white ;
+    font-size: 17px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+#navbar-btn:hover{
+    color: #15FFFD;
+}
+#navbar-btn::after{
+    content: '';
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(#20232D , #15fffba8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s all ease;
+} #navbar-btn:hover::after{
+    opacity: 1 ;
+}
+
+/* ACTIVE */
+.acive{
+    width: 100px !important;
+    height: 100% !important;
+    color: #15FFFD !important;
+    background: linear-gradient(#20232D , #15fffba8) !important;
+}
+
+
+
+/* ABOUT ME */
+#section-section1{
+    margin-top: 75px;
+}
+
+/* social-icons */
+.social-icons{
+    border: 3px solid  #15FFFD;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons:hover{
+    transition: .5s all ease;
+    box-shadow: 0 0 10px 1px  #15FFFD;
+    background-color:  #15FFFD;
+    iconify-icon{
+        color:#20232D !important;
+    }
+}
+
+/* my-button */
+
+.my-button:hover{
+    background-color:  #15FFFD !important;
+    color:#20232D !important ;
+    box-shadow: 0 0 10px 1px  #15FFFD;
+    transition: .5s all ease;
+}
+.larg-button:hover{
+    box-shadow: 0 0 10px 2px  #15FFFD;
+}
+
+
+/* my-images */
+
+.my-images{
+    width: 470px;
+    height: 470px;
+    border: 3px solid  #15FFFD ;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px 2px  #15FFFD;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.hr-castom1{
+    opacity: 1 !important;
+    border: 1px solid #15FFFD;
+    width: 150px;
+    box-shadow: 0 0 9px 2px #15FFFD;
+}
+.hr-castom2{
+    opacity: 1 !important;
+    border: 1px solid #15FFFD;
+    width: 100px;
+    box-shadow: 0 0 9px 2px #15FFFD;
+}
+
+
+
+
+/* SKILL */
+.skill-icons{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #15FFFD;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px  #15FFFD;
+    padding: 2px;
+    background-color: #20232D;
+}
+.skill-main{
+    width: 470px ;
+    height: 470px;
+    border: 3px solid #15FFFD;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    box-shadow: 0 0 75px 2px  #15FFFD;
+    animation: skills-main-1 8s linear infinite ;
+}
+.html-5{
+    position: absolute;
+    top: 45px;
+    left: 28px;
+    cursor: pointer;
+}
+.css-3{
+    position: absolute;
+    top: 45px;
+    right: 26px;
+    cursor: pointer;
+    
+}
+.bootstrap{
+    position: absolute;
+    bottom: 45px ;
+    left: 28px;
+    cursor: pointer;
+    
+}
+.canva{
+    position: absolute;
+    bottom: 45px;
+    right: 26px;
+    cursor: pointer;
+    
+}
+.skill-main2{
+    width: 280px ;
+    height: 280px;
+    border: 3px solid #15FFFD;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    box-shadow: 0 0 35px 2px  #15FFFD;
+    animation: skills-main-2 8s linear infinite ;
+}
+.JavaScript{
+    position: absolute;
+    left: 105px;
+    top: -32px;
+    cursor: pointer;
+    
+}
+.jquery{
+    position: absolute;
+    right: -32px;
+    top: 105px;
+    cursor: pointer;
+    
+}
+.vueJs{
+    position: absolute;
+    left: -32px;
+    top: 105px;
+    cursor: pointer;
+    
+}
+.gsap{
+    position: absolute;
+    left: 105px;
+    bottom: -32px;
+    cursor: pointer;
+    
+}
+.skill-main3{
+    width: 140px ;
+    height: 140px;
+    border: 3px solid #15FFFD;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-shadow: 0 0 25px 2px  #15FFFD;
+    z-index: 4;
+}
+@keyframes skills-main-1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes skills-main-2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+#showName{
+    width: 140px;
+    height: 40px;
+    margin-top: 80px !important;
+}
+
+
+
+
+/* MY PORTFOLIO */
+.portfolio-cards{
+    border: 1px solid #15FFFD !important;
+    overflow: hidden;
+    box-shadow: 0 0 5px 2px #15FFFD; 
+}
+.portfolio-cards:hover{  
+    box-shadow: 0 0 15px 2px #15FFFD; 
+    transition: .2s ease;
+    .protfolio-card-vew{
+        transform: translateY(0%);
+    }
+}
+.protfolio-card-vew{
+    width: 100%;
+    height: 100%;
+    background-color: #1699977c;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(101%);
+    transition: .5s all ease;
+}
+
+
+
+/* CONTACT US */
+.input-box{
+    background-color: #323743 !important;
+    border: 1px solid #323743 !important;
+    color: #15FFFD !important;
+    font-size: 18px !important;
+}
+::-webkit-input-placeholder{
+    color: #15FFFD !important;
+    padding-left: 15px;
+}
+.input-box1{
+    border-color: red !important;
+}
+.input-box2{
+    border-color: green !important;
+}
+
+
+
+/* ANIMATION */
+
+#section-section1,
+#section-section2,
+#section-section3,
+#section-section4,
+#section-section5{
+
+    position: sticky !important;
+    top: 75px !important;
+}
+
+
+ 
+ 
